@@ -9,7 +9,7 @@ public class Task3 {
         Box box4 = new Box();
 
         putApplesToBox(box1, 6);
-        putOrangeToBox(box2, 4);
+        putOrangesToBox(box2, 4);
         putApplesToBox(box3, 5);
 
         System.out.println(box1.getWeight() + " equals " + box2.getWeight() + ": " + box1.compare(box2));
@@ -26,7 +26,7 @@ public class Task3 {
         }
     }
 
-    public static void putOrangeToBox(Box box, int count) {
+    public static void putOrangesToBox(Box box, int count) {
         for (int i = 0; i < count; i++) {
             box.add(new Orange());
         }
