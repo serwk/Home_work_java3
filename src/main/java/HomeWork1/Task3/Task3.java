@@ -3,10 +3,18 @@ package HomeWork1.Task3;
 public class Task3 {
     public static void main(String[] args) {
 
-        Box box1 = new Box();
-        Box box2 = new Box();
-        Box box3 = new Box();
-        Box box4 = new Box();
+        // В моем решении коробка может использоваться для любых фруктов
+//        Box box1 = new Box();
+//        Box box2 = new Box();
+//        Box box3 = new Box();
+//        Box box4 = new Box();
+
+        // В решении преподавателя тип коробки задается изначально и неизменяется в процессе
+
+        Box <Apple> box1 = new Box<>();
+        Box <Fruit> box2 = new Box<>();
+        Box <Apple> box3 = new Box<>();
+        Box <Apple> box4 = new Box();
 
         putApplesToBox(box1, 6);
         putOrangesToBox(box2, 4);
