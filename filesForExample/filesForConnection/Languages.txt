@@ -1,0 +1,26 @@
+
+Languages
+
+See also: List of JVM languages and JVM programming languages
+The word "Java", alone, usually refers to Java programming language that was designed for use with the Java platform.
+Programming languages are typically outside of the scope of the phrase "platform",
+although the Java programming language was listed as a core part of the Java platform before Java 7.
+The language and runtime were therefore commonly considered a single unit. However,
+an effort was made with the Java 7 specification to more clearly treat the Java language and
+the Java virtual machine as separate entities, so that they are no longer considered a single unit.[23]
+
+Third parties have produced many compilers or interpreters that target the JVM.
+Some of these are for existing languages, while others are for extensions to the Java language.
+
+These include:
+
+BeanShell – A lightweight scripting language for Java[24]
+Ceylon – An object-oriented, strongly statically typed programming language with an emphasis on immutability
+Clojure – A modern, dynamic, and functional dialect of the Lisp programming language on the Java platform
+Gosu – A general-purpose Java Virtual Machine-based programming language released under the Apache License 2.0
+Groovy – A fully Java interoperable, Java-syntax-compatible, static and dynamic language with features from Python, Ruby, Perl, and Smalltalk
+JRuby – A Ruby interpreter
+Jython – A Python interpreter
+Kotlin – An industrial programming language for JVM with full Java interoperability
+Rhino – A JavaScript interpreter
+Scala – A multi-paradigm programming language with non-Java compatible syntax designed as a "better Java"

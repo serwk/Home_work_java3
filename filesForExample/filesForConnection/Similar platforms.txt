@@ -1,0 +1,19 @@
+
+Similar platforms
+
+See also: Comparison of the Java and .NET platforms and Comparison of C# and Java
+The success of Java and its write once, run anywhere concept has led to other similar efforts,
+notably the .NET Framework, appearing since 2002, which incorporates many of the successful aspects of Java.
+.NET was built from the ground-up to support multiple programming languages,
+ while the Java platform was initially built to support only the Java language,
+ although many other languages have been made for JVM since. Like Java,
+ .NET languages compile to byte code and are executed by the Common Language Runtime (CLR),
+ which is similar in purpose to the JVM. Like the JVM,
+ the CLR provides memory management through automatic garbage collection,
+ and allows .NET byte code to run on multiple operating systems.
+
+.NET includes a Java-like language called Visual J# (formerly named J++) that is incompatible with the Java specification,
+and the associated class library mostly dates to the old JDK 1.1 version of the language.
+For these reasons, it is more of a transitional language to switch from Java to the .NET platform
+than it is a first class .NET language. Visual J# was discontinued with the release of Microsoft Visual Studio 2008.
+The existing version shipping with Visual Studio 2005 will be supported until 2015 as per the product life-cycle strategy.[citation needed]

@@ -1,0 +1,8 @@
+
+Java Development Kit
+
+Main article: Java Development Kit
+The Java Development Kit (JDK) is a Sun product aimed at Java developers.
+Since the introduction of Java, it has been by far the most widely used
+Java software development kit (SDK).[citation needed] It contains a Java compiler,
+a full copy of the Java Runtime Environment (JRE), and many other important development tools.
