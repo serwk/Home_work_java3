@@ -1,0 +1,99 @@
+
+Java Virtual Machine
+
+Main article: Java Virtual Machine
+The heart of the Java platform is the concept of a "virtual machine" that executes Java bytecode programs.
+This bytecode is the same no matter what hardware or operating system the program is running under.
+However, new versions, such as for Java 10 (and earlier),
+have made small changes, meaning the bytecode is in general only forward compatible.
+There is a JIT (Just In Time) compiler within the Java Virtual Machine, or JVM.
+The JIT compiler translates the Java bytecode into native processor instructions
+at run-time and caches the native code in memory during execution.
+
+The use of bytecode as an intermediate language permits Java programs to run on any platform
+that has a virtual machine available. The use of a JIT compiler means that Java applications,
+after a short delay during loading and once they have "warmed up" by being all or mostly JIT-compiled,
+tend to run about as fast as native programs.[20][21][22] Since JRE version 1.2,
+Sun's JVM implementation has included a just-in-time compiler instead of an interpreter.
+
+Although Java programs are cross-platform or platform independent,
+the code of the Java Virtual Machines (JVM) that execute these programs is not.
+Every supported operating platform has its own JVM.
+
+Class libraries
+
+Main article: Java Class Library
+In most modern operating systems (OSs), a large body of reusable code is provided to simplify the programmer's job.
+This code is typically provided as a set of dynamically loadable libraries that applications can call at runtime.
+Because the Java platform is not dependent on any specific operating system,
+applications cannot rely on any of the pre-existing OS libraries.
+Instead, the Java platform provides a comprehensive set of its own standard class libraries
+containing many of the same reusable functions commonly found in modern operating systems.
+Most of the system library is also written in Java. For instance,
+the Swing library paints the user interface and handles the events itself,
+eliminating many subtle differences between how different platforms handle components.
+
+The Java class libraries serve three purposes within the Java platform.
+First, like other standard code libraries, the Java libraries provide the programmer a well-known set of functions to perform common tasks,
+such as maintaining lists of items or performing complex string parsing.
+Second, the class libraries provide an abstract interface to tasks that would normally depend heavily on the hardware and operating system.
+Tasks such as network access and file access are often heavily intertwined with the distinctive implementations of each platform.
+The java.net and java.io libraries implement an abstraction layer in native OS code,
+then provide a standard interface for the Java applications to perform those tasks.
+Finally, when some underlying platform does not support all of the features a Java application expects,
+the class libraries work to gracefully handle the absent components,
+either by emulation to provide a substitute,
+or at least by providing a consistent way to check for the presence of a specific feature.
+
+Languages
+
+See also: List of JVM languages and JVM programming languages
+The word "Java", alone, usually refers to Java programming language that was designed for use with the Java platform.
+Programming languages are typically outside of the scope of the phrase "platform",
+although the Java programming language was listed as a core part of the Java platform before Java 7.
+The language and runtime were therefore commonly considered a single unit. However,
+an effort was made with the Java 7 specification to more clearly treat the Java language and
+the Java virtual machine as separate entities, so that they are no longer considered a single unit.[23]
+
+Third parties have produced many compilers or interpreters that target the JVM.
+Some of these are for existing languages, while others are for extensions to the Java language.
+
+These include:
+
+BeanShell – A lightweight scripting language for Java[24]
+Ceylon – An object-oriented, strongly statically typed programming language with an emphasis on immutability
+Clojure – A modern, dynamic, and functional dialect of the Lisp programming language on the Java platform
+Gosu – A general-purpose Java Virtual Machine-based programming language released under the Apache License 2.0
+Groovy – A fully Java interoperable, Java-syntax-compatible, static and dynamic language with features from Python, Ruby, Perl, and Smalltalk
+JRuby – A Ruby interpreter
+Jython – A Python interpreter
+Kotlin – An industrial programming language for JVM with full Java interoperability
+Rhino – A JavaScript interpreter
+Scala – A multi-paradigm programming language with non-Java compatible syntax designed as a "better Java"
+
+Similar platforms
+
+See also: Comparison of the Java and .NET platforms and Comparison of C# and Java
+The success of Java and its write once, run anywhere concept has led to other similar efforts,
+notably the .NET Framework, appearing since 2002, which incorporates many of the successful aspects of Java.
+.NET was built from the ground-up to support multiple programming languages,
+ while the Java platform was initially built to support only the Java language,
+ although many other languages have been made for JVM since. Like Java,
+ .NET languages compile to byte code and are executed by the Common Language Runtime (CLR),
+ which is similar in purpose to the JVM. Like the JVM,
+ the CLR provides memory management through automatic garbage collection,
+ and allows .NET byte code to run on multiple operating systems.
+
+.NET includes a Java-like language called Visual J# (formerly named J++) that is incompatible with the Java specification,
+and the associated class library mostly dates to the old JDK 1.1 version of the language.
+For these reasons, it is more of a transitional language to switch from Java to the .NET platform
+than it is a first class .NET language. Visual J# was discontinued with the release of Microsoft Visual Studio 2008.
+The existing version shipping with Visual Studio 2005 will be supported until 2015 as per the product life-cycle strategy.[citation needed]
+
+Java Development Kit
+
+Main article: Java Development Kit
+The Java Development Kit (JDK) is a Sun product aimed at Java developers.
+Since the introduction of Java, it has been by far the most widely used
+Java software development kit (SDK).[citation needed] It contains a Java compiler,
+a full copy of the Java Runtime Environment (JRE), and many other important development tools.

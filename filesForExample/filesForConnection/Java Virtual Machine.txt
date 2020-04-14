@@ -1,0 +1,21 @@
+
+Java Virtual Machine
+
+Main article: Java Virtual Machine
+The heart of the Java platform is the concept of a "virtual machine" that executes Java bytecode programs.
+This bytecode is the same no matter what hardware or operating system the program is running under.
+However, new versions, such as for Java 10 (and earlier),
+have made small changes, meaning the bytecode is in general only forward compatible.
+There is a JIT (Just In Time) compiler within the Java Virtual Machine, or JVM.
+The JIT compiler translates the Java bytecode into native processor instructions
+at run-time and caches the native code in memory during execution.
+
+The use of bytecode as an intermediate language permits Java programs to run on any platform
+that has a virtual machine available. The use of a JIT compiler means that Java applications,
+after a short delay during loading and once they have "warmed up" by being all or mostly JIT-compiled,
+tend to run about as fast as native programs.[20][21][22] Since JRE version 1.2,
+Sun's JVM implementation has included a just-in-time compiler instead of an interpreter.
+
+Although Java programs are cross-platform or platform independent,
+the code of the Java Virtual Machines (JVM) that execute these programs is not.
+Every supported operating platform has its own JVM.
