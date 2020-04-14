@@ -1,5 +1,6 @@
 package HomeWork4;
 
+// Task 1 
 public class MyWaitNotify {
 
     private final Object mon = new Object();
