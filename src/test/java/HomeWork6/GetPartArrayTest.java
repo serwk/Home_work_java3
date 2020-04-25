@@ -13,21 +13,21 @@ import java.util.Collection;
 public class GetPartArrayTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
-        return Arrays.asList(new Object[][][] {
-                {{1,7},{1,2,4,4,2,3,4,1,7},{4}},
-                {{2,3,0,1,7},{1,2,4,4,2,3,0,1,7},{4}},
-                {{18,1,7},{1,2,4,4,2,4,8,1,7},{4}}
+        return Arrays.asList(new Object[][] {
+                {new int[]{1,2,4,4,2,3,4,1,7},4,new int[]{1,7}},
+                {new int[]{1,2,4,4,2,3,0,1,7},4,new int[]{2,3,0,1,7}},
+                {new int[]{1,2,4,4,2,4,8,1,7},4,new int[]{8,1,7}}
         });
     }
 
-    private int[] result;
     private int[] inArr;
     private int num;
+    private int[] result;
 
-    public GetPartArrayTest(int[] result, int[] inArr, int[] num) {
-        this.result = result;
+    public GetPartArrayTest(int[] inArr, int num, int[] result) {
         this.inArr = inArr;
-        this.num = num[0];
+        this.num = num;
+        this.result = result;
     }
 
     GetPartArray getPartArray;
@@ -39,7 +39,7 @@ public class GetPartArrayTest {
 
     @Test
     public void getArrAfterNumberTest() {
-        Assert.assertEquals(result, getPartArray.getArrAfterNumber(inArr, num));
+        Assert.assertTrue("Arrays are not equals", Arrays.equals(result, getPartArray.getArrAfterNumber(inArr, num)));
     }
 
     @Test(expected = RuntimeException.class)

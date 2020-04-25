@@ -14,9 +14,8 @@ public class CheckArrayTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {new int[]{1,2,4,4,2,3,4,1,7},1,4, true},
+                {new int[]{1,4,4,1,4,4,1,4,1},1,4, true},
                 {new int[]{2,3,7,0,9,5,8,2,3},1,4, false}
-
         });
     }
 

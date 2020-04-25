@@ -13,11 +13,18 @@ public class CheckArray {
             return false;
         }
 
+        boolean containsA = false;
+        boolean containsB = false;
+
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != a || arr[i] != b) {
+            if (arr[i] == a){
+                containsA = true;
+            } else if (arr[i] == b){
+                containsB = true;
+            } else {
                 return false;
             }
         }
-        return true;
+        return containsA && containsB;
     }
 }
