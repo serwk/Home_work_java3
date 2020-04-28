@@ -2,16 +2,16 @@ package HomeWork8;
 
 public class Spiral {
     public static void main(String[] args) {
-        int[][] spiral = getSpiral( 5, 7);
+        int[][] spiral = getSpiral( 5);
         printSpiral(spiral);
     }
 
-    private static int[][] getSpiral (int row, int col){
-        int[][] array = new int[row][col];
-        int minRow = 0, maxRow = row - 1, minCol = 0, maxCol = col - 1;
-        int count = 0;
-        int max = row * col;
-        while (count < max) {
+    private static int[][] getSpiral (int size){
+        int[][] array = new int[size][size];
+        int minRow = 0, maxRow = size - 1, minCol = 0, maxCol = size - 1;
+        int count = 1;
+        int max = size * size;
+        while (count <= max) {
             for (int i = minCol; i <= maxCol; i++) {
                 array[minRow][i] = count;
                 count++;
